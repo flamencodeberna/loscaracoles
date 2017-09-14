@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
+    <h1>Esto es un test</h1>
     <h1 class="text-center"><?php perch_content('test');?></h1>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
