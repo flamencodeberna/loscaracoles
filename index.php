@@ -12,6 +12,107 @@
   <body>
     <h1>Esto es un test</h1>
     <h1 class="text-center"><?php perch_content('test');?></h1>
+    <section class="team" id="team">
+      <div class="container">
+        <h2 class="text-center">
+          Meet our team
+        </h2>
+
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="img/team-1.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
+              </div>
+
+              </a><div class="team-over"><a href="#">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                </a><nav class="social-nav"><a href="#">
+                  </a><a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+                </nav>
+
+                <p>
+                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="img/team-2.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
+              </div>
+
+              </a><div class="team-over"><a href="#">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                </a><nav class="social-nav"><a href="#">
+                  </a><a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+                </nav>
+
+                <p>
+                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="img/team-3.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
+              </div>
+
+              </a><div class="team-over"><a href="#">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                </a><nav class="social-nav"><a href="#">
+                  </a><a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+                </nav>
+
+                <p>
+                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="#"><img alt="" class="team-img" src="img/team-4.jpg">
+              <div class="card-title-wrap">
+                <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
+              </div>
+
+              </a><div class="team-over"><a href="#">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                </a><nav class="social-nav"><a href="#">
+                  </a><a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+                </nav>
+
+                <p>
+                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
