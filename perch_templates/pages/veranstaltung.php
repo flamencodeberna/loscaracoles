@@ -12,5 +12,7 @@
     ); ?-->
     <?php perch_content('veranstaltung'); ?>
 
+
+    <?php perch_page_url(); ?>
 </body>
 </html>

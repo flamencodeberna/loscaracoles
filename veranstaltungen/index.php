@@ -11,6 +11,12 @@
             Los Caracoles organisiert einerseits professionelle Konzerte und anderseits sogenannte Vivencias, bei denen
             sich
             Flamenco-Interessierte treffen. Daneben finden sich auf dieser Liste auch Fremdveranstaltungen.
+            <?php perch_page_url(); ?>
+
+            <?php perch_pages_navigation([
+                    'from-path' => '/veranstaltungen/',
+                    'levels' => 1
+            ]); ?>
         </p>
 
         <div class="row">

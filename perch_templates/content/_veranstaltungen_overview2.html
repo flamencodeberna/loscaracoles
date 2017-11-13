@@ -1,3 +1,5 @@
+<!--https://bootsnipp.com/snippets/BEeZ4-->
+
 <li>
     <time datetime="2018-10-29">
         <span class="day"><perch:content id="date" type="date" label="Date of event" format="d"/></span>
@@ -12,7 +14,7 @@
         <div class="row">
             <div class="col-sm-10">
                 <h2 class="title">
-                    <perch:content id="title" type="text" label="title"/>
+                    <a href="<perch:content id="_page" type="hidden" />"><perch:content id="title" type="text" label="title"/></a>
                 </h2>
             </div>
             <div class="col-sm-2">
@@ -32,7 +34,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3">Ort:</div>
+            <div class="col-sm-3">Ort: </div>
             <div class="col-sm-9">
                 <perch:content id="location" type="text" label="location"/>
             </div>
