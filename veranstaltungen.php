@@ -1,3 +1,4 @@
+<?php include('perch/runtime.php'); ?>
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -91,6 +92,7 @@
     <!-- // Carousel> -->
 	<section class="py-5">
 		<div class="container">
+			<?php perch_content('test'); ?>
 			<div class="row">
 				<div class="col-md-12">
 					<h1 class="text-uppercase display-5">Konzerte</h1>
