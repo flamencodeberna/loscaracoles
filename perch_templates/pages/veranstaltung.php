@@ -1,18 +1,7 @@
-<?php if (!defined('PERCH_RUNWAY')) include($_SERVER['DOCUMENT_ROOT'].'/perch/runtime.php'); ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-	<title><?php perch_pages_title(); ?></title>
-	<?php perch_page_attributes(); ?>
-</head>
-<body>
-    <!--?php perch_pages_navigation([
-            'levels'=>1]
-    ); ?-->
+<?php include('../include/header.html'); ?>
+
+<?php include('../include/navigation.html'); ?>
+
     <?php perch_content('veranstaltung'); ?>
 
-
-    <?php perch_page_url(); ?>
-</body>
-</html>
+<?php include('../include/footer.html'); ?>
