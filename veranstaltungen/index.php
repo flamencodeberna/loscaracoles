@@ -2,6 +2,8 @@
 
 <?php include('../include/navigation.html'); ?>
 
+<div class="py-5">
+
     <div class="container">
 
         <h1>Veranstaltungen</h1>
@@ -33,5 +35,7 @@
                 'levels' => 1]
         ); ?-->
     </div>
+
+</div>
 
 <?php include('../include/footer.html'); ?>
