@@ -10,8 +10,6 @@
     <!--?php perch_pages_navigation([
             'levels'=>1]
     ); ?-->
-
-
     <?php perch_content('veranstaltung'); ?>
 
 </body>

@@ -1,7 +1,5 @@
 <?php include('include/header.html'); ?>
 
-hello:
-
 <?php perch_content_custom('veranstaltung', [
     'page' => '/veranstaltungen/*.php',
     'template' => '_veranstaltungen_overview.html',
