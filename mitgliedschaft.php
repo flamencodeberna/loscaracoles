@@ -22,8 +22,7 @@
                             <p>Für Einzelpersonen. Beitrag: Fr. 90.-- pro Jahr, Gratiseintritt in alle regulären
                                 Konzerte
                                 während eines Vereinsjahres. Informationen wahlweise per Post oder E-Mail.
-                                Mitgliedsausweis.</p>
-                            <a href="#" class="btn btn-dark">Subscribe</a>
+                                Mitgliedsausweis.</p>                          
                         </div>
                     </div>
                 </div>
@@ -37,8 +36,7 @@
                                 freier Wahl, bei Reservation über die Webseite halten wir Ihnen einen resp. zwei
                                 Sitzplätze
                                 frei. Informationen wahlweise per Post oder E-Mail. Auf Wunsch
-                                Erwähnung im Programm und/oder auf der Homepage. Mitgliedsausweis.</p>
-                            <a href="#" class="btn btn-dark">Subscribe</a>
+                                Erwähnung im Programm und/oder auf der Homepage. Mitgliedsausweis.</p>                           
                         </div>
                     </div>
                 </div>
@@ -52,8 +50,6 @@
                                 Kein
                                 Gratiseintritt an die Anlässe. Regelmässige Informationen über die Vereinstätigkeit per
                                 E-Mail oder per Post. Kein Mitgliedsausweis. </p>
-                            <a href="#"
-                               class="btn btn-dark">Subscribe</a>
                         </div>
                     </div>
                 </div>
