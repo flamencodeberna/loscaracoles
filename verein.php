@@ -73,9 +73,9 @@
                         <br>Vivencias</p>
                 </div>
                 <div class="col-md-4 p-4">
-                    <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/">
-                    <p><b>Carlito</b>
-                        <br>Boss</p>
+                    <img class="img-fluid d-block rounded-circle mx-auto" width="100px" src="/img-caracoles/vorstand/zora.jpg">
+                    <p><b>Zora Scheidegger</b>
+                        <br>Diverse</p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,60 @@
+<perch:form id="mitgliederschaft" method="post" app="perch_forms">
+              <fieldset>
+                <!-- Form Name -->
+                <!-- Text input-->
+                <h3>Mitgliedschaf</h3>
+                <div class="form-group">
+                  <perch:label class=" control-label" for="name">Name</perch:label>
+                  <div class="">
+                     <perch:input id="Name" name="Name" type="text" placeholder="" class="form-control input-md" required="true"data-validation-required-message=""/> </div>
+                </div>
+                <div class="form-group">
+                  <perch:label class="control-label" for="vorname">Vorname</perch:label>
+                  <div class="">
+                     <perch:input id="Vorname" name="Vorname" type="text" placeholder="" class="form-control input-md" required="true" data-validation-required-message=""/> </div>
+                </div>
+                <!-- Text input-->               
+                <!-- Text input-->
+                <div class="form-group">
+                  <perch:label class=" control-label" for="plz">PLZ</perch:label>
+                  <div class="">
+                     <perch:input id="PLZ" name="PLZ" type="text" placeholder="" class="form-control input-md" required="true"data-validation-required-message=""/> </div>
+                </div>
+                <div class="form-group">
+                  <perch:label class=" control-label" for="ort">Ort</perch:label>
+                  <div class="">
+                     <perch:input id="Ort" name="Ort" type="text" placeholder="" class="form-control input-md" required="true"data-validation-required-message=""/> </div>
+                </div>
+                <!-- Text input-->
+                <!-- Text input-->
+                <div class="form-group">
+                  <perch:label class=" control-label" for="email">E-Mail</perch:label>
+                   <perch:input id="email" name="E-Mail" type="email" placeholder="" class="form-control input-md" required="true" data-validation-required-message="No te olvides de poner tu mail"/> 
+                </div>
+                <!-- Multiple Radios -->
+                
+                <perch:input id="Mitgliedschaftsform" class="control-label" type="radio" options="Einzelmitglied,Gönnermitglied, Passivmitglied" wrap="div.radiowrapper" required="true" />
+                
+                <!-- Multiple Checkboxes (inline) -->
+                <div class="form-group">   
+                    <label class="checkbox-inline" for="checkboxes-0">
+                       <perch:input type="checkbox" name="checkboxes" id="E-mail" value="Ich möchte die Informationen per E-Mail erhalten."/> Ich möchte die Informationen per E-Mail erhalten.
+                    </label>
+                  </div>
+                </div>
+                <!-- Button -->
+                <div class="form-group">
+                  <div class="col-md-4">
+                    <perch:input type="submit" id="submit"  class="btn btn-primary" value="Senden"/>
+                  </div>
+                </div>
+                
+                <perch:success>				
+				<div class="row">				
+					<div class="alert cussess text-success">
+                <perch:content id="success" type="textarea" size="m" label="Mensaje de Gracias" markdown="true" editor="simplemde" required="true"/>
+            </div>
+        </div>
+    </perch:success>
+              </fieldset>
+           </perch:form>
