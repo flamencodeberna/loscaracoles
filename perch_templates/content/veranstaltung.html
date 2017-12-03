@@ -1,13 +1,24 @@
-<?php include('../include/header.html'); ?>
-
-<?php include('../include/navigation.html'); ?>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!--<ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol> -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="first-slide img-fluid" src="/img/homenagerafaeldehuelva.jpg" alt="First slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1><perch:content id="title" type="text" label="title"/></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="py-5">
 
     <div class="container">
-        <h1>
-            <perch:content id="title" type="text" label="title"/>
-        </h1>
         <div class="card">
             <div class="card-body">
                 <div class="row">
