@@ -1,22 +1,84 @@
+<!--https://bootsnipp.com/snippets/BEeZ4-->
 
-<div class="card" >
-    <div class="card-header">
-        <perch:content id="date" type="date" label="Date of event" format="D d F y" />
-    </div>
-    <div class="card-body">
-        <h4 class="card-title"><perch:content id="title" type="text" label="title" /></h4>
-        <img src="/img/logo69.png" width="20%" align="left">
-        <p class="card-text">
-            Datum: <perch:content id="date" type="date" label="Date of event" format="D d F y" /><br>
-            Ort: <perch:content id="location" type="text" label="location" /><br>
-            Zeit: <perch:content id="time" type="text" label="time" />, Türöffnung <perch:content id="doorOpeningTime" type="text" label="doorOpeningTime" /><br>
-            Künstler: <perch:content id="artists" type="text" label="artists" /><br>
-        </p>
-        <a href="#" class="btn btn-primary">Mehr erfahren</a>
-    </div>
+<li>
+    <time datetime="2018-10-29">
+        <span class="day"><perch:content id="date" type="date" label="Date of event" format="d"/></span>
+        <span class="month"><perch:content id="date" type="date" label="Date of event" format="M"/></span>
+        <!--<span class="year"><perch:content id="date" type="date" label="Date of event" format="d" /></span>-->
+        <!--<span class="time"><perch:content id="time" type="text" label="time"/></span>-->
+    </time>
+    <perch:if exists="smallTitleImage">
+        <img src="<perch:content id="smallTitleImage" type="image" label="Kleines Titel-Bild für die Übersicht" suppress="false"/>"/>
+        <perch:else/>
+        <img src="/img/logo69.png"/>
+    </perch:if>
 
-    <!--div class="card-footer">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-    </div-->
-</div>
+    <div class="info">
+
+        <div class="row">
+            <div class="col-sm-10">
+                <h2 class="title">
+                    <a href="<perch:content id="_page" type="hidden" />"><perch:content id="title" type="text" label="title"/></a>
+                </h2>
+            </div>
+            <div class="col-sm-2">
+                <!--<img alt="germany" class="flag" src="https://theodora.com/flags/new/de-t.gif"/>-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">Start:</div>
+            <div class="col-sm-9">
+                <perch:content id="time" type="text" label="time"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">Türöffnung:</div>
+            <div class="col-sm-9">
+                <perch:content id="doorOpeningTime" type="text" label="doorOpeningTime"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">Ort: </div>
+            <div class="col-sm-9">
+                <perch:content id="location" type="text" label="location"/>
+            </div>
+        </div>
+        <!--<div class="row">-->
+        <!--<div class="col-sm-3">Cost:</div>-->
+        <!--<div class="col-sm-9">€15</div>-->
+        <!--</div>-->
+    </div>
+    <!--<div class="social">-->
+    <!--<ul>-->
+    <!--<li class="facebook" style="width:33%;"><a href="#facebook"><span-->
+    <!--class="fa fa-facebook"></span></a></li>-->
+    <!--<li class="twitter" style="width:34%;"><a href="#twitter"><span-->
+    <!--class="fa fa-twitter"></span></a></li>-->
+    <!--<li class="google-plus" style="width:33%;"><a href="#google-plus"><span-->
+    <!--class="fa fa-soundcloud"></span></a></li>-->
+    <!--</ul>-->
+    <!--</div>-->
+</li>
+
+
+<!--<div class="card" >-->
+<!--<div class="card-header">-->
+<!--<perch:content id="date" type="date" label="Date of event" format="D d F y" />-->
+<!--</div>-->
+<!--<div class="card-body">-->
+<!--<h4 class="card-title"><perch:content id="title" type="text" label="title" /></h4>-->
+<!--<img src="/img/logo69.png" width="20%" align="left">-->
+<!--<p class="card-text">-->
+<!--Datum: <perch:content id="date" type="date" label="Date of event" format="D d F y" /><br>-->
+<!--Ort: <perch:content id="location" type="text" label="location" /><br>-->
+<!--Zeit: <perch:content id="time" type="text" label="time" />, Türöffnung <perch:content id="doorOpeningTime" type="text" label="doorOpeningTime" /><br>-->
+<!--Künstler: <perch:content id="artists" type="text" label="artists" /><br>-->
+<!--</p>-->
+<!--<a href="#" class="btn btn-primary">Mehr erfahren</a>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;div class="card-footer">-->
+<!--<a href="#" class="card-link">Card link</a>-->
+<!--<a href="#" class="card-link">Another link</a>-->
+<!--</div&ndash;&gt;-->
+<!--</div>-->
