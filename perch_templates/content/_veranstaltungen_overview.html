@@ -7,8 +7,12 @@
         <!--<span class="year"><perch:content id="date" type="date" label="Date of event" format="d" /></span>-->
         <!--<span class="time"><perch:content id="time" type="text" label="time"/></span>-->
     </time>
-    <img alt="bild"
-         src="/img/logo69.png"/>
+    <perch:if exists="smallTitleImage">
+        <img src="<perch:content id="smallTitleImage" type="image" label="Kleines Titel-Bild für die Übersicht" suppress="false"/>"/>
+        <perch:else/>
+        <img src="/img/logo69.png"/>
+    </perch:if>
+
     <div class="info">
 
         <div class="row">
