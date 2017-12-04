@@ -1,3 +1,5 @@
+<perch:content id="smallTitleImage" type="image" label="Kleines Titel-Bild für die Übersicht" suppress="true"/>
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!--<ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -5,6 +7,9 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol> -->
     <div class="carousel-inner">
+
+
+
         <div class="carousel-item active">
             <perch:if exists="titleImage">
                 <img src="<perch:content id="titleImage" type="image" label="Titel Bild" />" width="100%" />
@@ -15,7 +20,7 @@
             <div class="container">
                 <div class="carousel-caption">
                     <h1><perch:content id="title" type="text" label="title"/></h1>
-                    <p><perch:content id="date" type="date" label="Date of event" format="D d F y"/></p>
+                    <p><perch:content id="date" type="date" label="Date of event" format="d.m.Y"/></p>
                 </div>
             </div>
         </div>
@@ -43,7 +48,7 @@
                         Datum
                     </div>
                     <div class="col-sm-8">
-                        <perch:content id="date" type="date" label="Date of event" format="D d F y"/>
+                        <perch:content id="date" type="date" label="Date of event" format="d.m.Y"/>
                     </div>
                 </div>
                 <hr>
@@ -52,10 +57,12 @@
                         Zeit
                     </div>
                     <div class="col-sm-8">
-                        <perch:if id="doorOpeningTime" match="neq" value="{time}">
-                            Türöffnung <perch:content id="doorOpeningTime" type="time" label="doorOpeningTime" format="H:i"/> /
+                        <perch:if id="doorOpeningTime" match="eq" value="{time}">
+                            <perch:content id="time" type="time" label="time" time="true" format="H:i"/>
+                            <perch:else/>
+                            Türöffnung <perch:content id="doorOpeningTime" type="time" label="doorOpeningTime" format="H:i"/>
+                            / Beginn: <perch:content id="time" type="time" label="time" time="true" format="H:i"/>
                         </perch:if>
-                        Beginn: <perch:content id="time" type="time" label="time" time="true" format="H:i"/>
                     </div>
                 </div>
                 <hr>
@@ -66,8 +73,12 @@
                     <div class="col-sm-8">
                         <perch:if id="price" match="eq" value="{priceReduced}">
                             <perch:content id="price" type="text" label="price"/>
-                        <perch:else/>
-                            Normal: <perch:content id="price" type="int" label="price"/> / Reduziert: <perch:content id="priceReduced" type="text" label="priceReduced"/>
+                            <perch:else/>
+                                <perch:if exists="priceReduced">
+                                    Normal: <perch:content id="price" type="int" label="price"/> / Reduziert: <perch:content id="priceReduced" type="text" label="priceReduced"/>
+                                    <perch:else/>
+                                        <perch:content id="price" type="int" label="price"/>
+                            </perch:if>
                         </perch:if>
                     </div>
                 </div>

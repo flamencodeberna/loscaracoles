@@ -19,7 +19,7 @@
 
                     <?php perch_content_custom('veranstaltung', [
                         'page' => '/veranstaltungen/*.php',
-                        'template' => '_veranstaltungen_overview2.html',
+                        'template' => '_veranstaltungen_overview.html',
                         'sort' => 'date',
                         'sort-order' => 'DESC',
                         #'count' => 2
