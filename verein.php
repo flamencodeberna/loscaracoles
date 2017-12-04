@@ -11,8 +11,6 @@
                     <?php perch_content('haupttext') ?>
 
 
-
-
                     <!-- InstanceEndEditable -->
 
                     <!-- end .content --></div>
@@ -63,7 +61,7 @@
                         <br>Diverse</p>
                 </div>
                 <div class="col-md-4 p-4">
-                    <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/">
+                    <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/oliver.jpg">
                     <p><b>Oliver Jaun</b>
                         <br>Diverse</p>
                 </div>
@@ -73,7 +71,8 @@
                         <br>Vivencias</p>
                 </div>
                 <div class="col-md-4 p-4">
-                    <img class="img-fluid d-block rounded-circle mx-auto" width="100px" src="/img-caracoles/vorstand/zora.jpg">
+                    <img class="img-fluid d-block rounded-circle mx-auto" width="100px"
+                         src="/img-caracoles/vorstand/zora.jpg">
                     <p><b>Zora Scheidegger</b>
                         <br>Diverse</p>
                 </div>
