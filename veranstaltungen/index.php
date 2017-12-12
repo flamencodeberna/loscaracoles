@@ -16,11 +16,17 @@
             <div >
                 <ul class="event-list">
 
-                    <?php perch_content_custom('veranstaltung', [
+                    <?php
+                    $today = date('Y-m-d');
+
+                    perch_content_custom('veranstaltung', [
                         'page' => '/veranstaltungen/*.php',
                         'template' => '_veranstaltungen_overview.html',
                         'sort' => 'date',
                         'sort-order' => 'DESC',
+                        'filter' => 'date',
+                        'match' => 'lte',
+                        'value' => "$today"
                         #'count' => 2
                     ]); ?>
 

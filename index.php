@@ -15,11 +15,96 @@
                 Namen geschaffen und ihre Anlässe sind zu einem unentbehrlichen Bestandteil des kulturellen Angebotes
                 der Stadt und Region Bern geworden.
             </p>
+            <div>
+
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <img href="" alt="abc"/>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        Veranstaltungsart
+                                    </div>
+                                    <div class="col-sm-6">
+                                        Los Caracoles Konzert
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        Datum
+                                    </div>
+                                    <div class="col-sm-8">
+                                        01.01.2018
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        Zeit
+                                    </div>
+                                    <div class="col-sm-8">
+                                        20:00
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        Preis
+                                    </div>
+                                    <div class="col-sm-8">
+                                        35 Fr.
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        Ort
+                                    </div>
+                                    <div class="col-sm-8">
+                                        Vidmarhalle 2
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        Künstler
+                                    </div>
+                                    <div class="col-sm-8">
+                                        Test, Test
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <ul class="event-list">
+
+                        <?php
+                        $today = date('Y-m-d');
+
+                        perch_content_custom('veranstaltung', [
+                            'page' => '/veranstaltungen/*.php',
+                            'template' => '_veranstaltungen_overview.html',
+                            'sort' => 'date',
+                            'sort-order' => 'DESC',
+                            'filter' => 'date',
+                            'match' => 'lte',
+                            'value' => "$today"
+                            #'count' => 2
+                        ]); ?>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <?php include('include/concert-carousel.html'); ?>
+            </div>
         </div>
-        <div class="col-sm-12 col-md-4">
-            <?php include('include/concert-carousel.html'); ?>
-        </div>
-    </div>
 </section>
 <section class="py-5 bg-light">
     <div class="container">
