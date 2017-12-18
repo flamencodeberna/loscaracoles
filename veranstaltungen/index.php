@@ -25,7 +25,7 @@
                         'sort' => 'date',
                         'sort-order' => 'DESC',
                         'filter' => 'date',
-                        'match' => 'lte',
+                        'match' => 'gte',
                         'value' => "$today"
                         #'count' => 2
                     ]); ?>
