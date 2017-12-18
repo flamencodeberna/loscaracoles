@@ -18,7 +18,7 @@
           <div class="card-block p-5">
             <h1>
               <sup>sFr</sup> 90</h1>
-            <h4>Einzelmitgliedschaft:</h4>
+            <h4>Einzelmitgliedschaft</h4>
             <hr>
             <p>Für Einzelpersonen. Beitrag: Fr. 90.-- pro Jahr, Gratiseintritt in alle regulären Konzerte während eines Vereinsjahres.
               Informationen wahlweise per Post oder E-Mail. Mitgliedsausweis.
@@ -31,7 +31,7 @@
           <div class="card-block p-5">
             <h1>
               <sup>sFr</sup> 250</h1>
-            <h4>Gönnermitgliedschaft:</h4>
+            <h4>Gönnermitgliedschaft</h4>
             <hr>
             <p>Beitrag: ab Fr. 250.-- pro Jahr, Gratiseintritt an alle Anlässe mit einer Begleitperson freier Wahl, bei Reservation
               über die Webseite halten wir Ihnen einen resp. zwei Sitzplätze frei. Informationen wahlweise per Post oder
@@ -44,7 +44,7 @@
           <div class="card-block p-5">
             <h1>
               <sup>sFr</sup> 20</h1>
-            <h4>Passivmitgliedschaft:</h4>
+            <h4>Passivmitgliedschaft</h4>
             <hr>
             <p>Als Passivmitglied unterstützen Sie Los Caracoles ideell. Beitrag: Fr. 20.-- pro Jahr. Kein Gratiseintritt an
               die Anlässe. Regelmässige Informationen über die Vereinstätigkeit per E-Mail oder per Post. Kein Mitgliedsausweis.

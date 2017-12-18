@@ -8,10 +8,11 @@
 
     <!--    <div class="row">-->
     <div class="col-sm-12 col-md-10">
-        <h1>Herzlich willkommen auf der Homepage der Peña Flamenca Los Caracoles!</h1>
+        <h1>Herzlich willkommen!</h1>
 
         <p>
-            Seit 1990 führt Los Caracoles in Bern Flamenco-Konzerte mit verschiedenen Künstlern und Gruppen aus
+            Seit 1990 führt der Verein Los Caracoles in Bern Flamenco-Konzerte mit verschiedenen Künstlern und Gruppen
+            aus
             Spanien, aus der Schweiz und anderen Ländern durch. In all den Jahren hat sich die Peña einen guten
             Namen geschaffen und ihre Anlässe sind zu einem unentbehrlichen Bestandteil des kulturellen Angebotes
             der Stadt und Region Bern geworden.
@@ -25,33 +26,31 @@
     <div class="col-sm-12 col-md-10">
 
 
-    Die nächste Flamenco-Veranstaltung:
+        <!--                            <ul class="event-list">-->
 
-<!--                            <ul class="event-list">-->
+        <?php
+        $today = date('Y-m-d');
 
-                                <?php
-                                $today = date('Y-m-d');
-
-                                perch_content_custom('veranstaltung', [
-                                    'page' => '/veranstaltungen/*.php',
-                                    'template' => '_veranstaltungen_overview2.html',
-                                    'sort' => 'date',
-                                    'sort-order' => 'DESC',
-                                    'filter' => 'date',
-                                    'match' => 'lte',
-                                    'value' => "$today",
-                                    'count' => 1
-                                ]); ?>
+        perch_content_custom('veranstaltung', [
+            'page' => '/veranstaltungen/*.php',
+            'template' => '_veranstaltungen_overview2.html',
+            'sort' => 'date',
+            'sort-order' => 'DESC',
+            'filter' => 'date',
+            'match' => 'lte',
+            'value' => "$today",
+            'count' => 1
+        ]); ?>
 
 
-<!--                            </ul>-->
+        <!--                            </ul>-->
     </div>
 
 
 </section>
 
 
-<!--section class="py-5 bg-light">
+<section class="py-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4">
@@ -95,6 +94,6 @@
             </div>
         </div>
     </div>
-</section-->
+</section>
 
 <?php include('include/footer.html'); ?>
