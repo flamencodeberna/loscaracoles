@@ -21,7 +21,7 @@
 
                     perch_content_custom('veranstaltung', [
                         'page' => '/veranstaltungen/*.php',
-                        'template' => '_veranstaltungen_overview.html',
+                        'template' => '_veranstaltungen_overview2.html',
                         'sort' => 'date',
                         'sort-order' => 'DESC',
                         'filter' => 'date',

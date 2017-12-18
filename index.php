@@ -5,108 +5,53 @@
 <?php include('include/title-carousel.html'); ?>
 
 <section class="container mt-5 mb-5">
-    <div class="row">
-        <div class="col-sm-12 col-md-8">
-            <h1 class="">Herzlich willkommen auf der Homepage der Peña Flamenca Los Caracoles!</h1>
 
-            <p class="">
-                Seit 1990 führt Los Caracoles in Bern Flamenco-Konzerte mit verschiedenen Künstlern und Gruppen aus
-                Spanien, aus der Schweiz und anderen Ländern durch. In all den Jahren hat sich die Peña einen guten
-                Namen geschaffen und ihre Anlässe sind zu einem unentbehrlichen Bestandteil des kulturellen Angebotes
-                der Stadt und Region Bern geworden.
-            </p>
-            <div>
+    <!--    <div class="row">-->
+    <div class="col-sm-12 col-md-10">
+        <h1>Herzlich willkommen auf der Homepage der Peña Flamenca Los Caracoles!</h1>
 
-                <div class="container-fluid">
-                    <div class="row">
+        <p>
+            Seit 1990 führt Los Caracoles in Bern Flamenco-Konzerte mit verschiedenen Künstlern und Gruppen aus
+            Spanien, aus der Schweiz und anderen Ländern durch. In all den Jahren hat sich die Peña einen guten
+            Namen geschaffen und ihre Anlässe sind zu einem unentbehrlichen Bestandteil des kulturellen Angebotes
+            der Stadt und Region Bern geworden.
+        </p>
+    </div>
+    <!--        <div class="col-sm-12 col-md-4">-->
+    <!--            --><?php //include('include/concert-carousel.html'); ?>
+    <!--        </div>-->
+    <!--    </div>-->
 
-                        <img href="" alt="abc"/>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        Veranstaltungsart
-                                    </div>
-                                    <div class="col-sm-6">
-                                        Los Caracoles Konzert
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        Datum
-                                    </div>
-                                    <div class="col-sm-8">
-                                        01.01.2018
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        Zeit
-                                    </div>
-                                    <div class="col-sm-8">
-                                        20:00
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        Preis
-                                    </div>
-                                    <div class="col-sm-8">
-                                        35 Fr.
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        Ort
-                                    </div>
-                                    <div class="col-sm-8">
-                                        Vidmarhalle 2
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        Künstler
-                                    </div>
-                                    <div class="col-sm-8">
-                                        Test, Test
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="col-sm-12 col-md-10">
 
 
-                    <ul class="event-list">
+    Die nächste Flamenco-Veranstaltung:
 
-                        <?php
-                        $today = date('Y-m-d');
+<!--                            <ul class="event-list">-->
 
-                        perch_content_custom('veranstaltung', [
-                            'page' => '/veranstaltungen/*.php',
-                            'template' => '_veranstaltungen_overview.html',
-                            'sort' => 'date',
-                            'sort-order' => 'DESC',
-                            'filter' => 'date',
-                            'match' => 'lte',
-                            'value' => "$today"
-                            #'count' => 2
-                        ]); ?>
+                                <?php
+                                $today = date('Y-m-d');
+
+                                perch_content_custom('veranstaltung', [
+                                    'page' => '/veranstaltungen/*.php',
+                                    'template' => '_veranstaltungen_overview2.html',
+                                    'sort' => 'date',
+                                    'sort-order' => 'DESC',
+                                    'filter' => 'date',
+                                    'match' => 'lte',
+                                    'value' => "$today",
+                                    'count' => 1
+                                ]); ?>
 
 
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <?php include('include/concert-carousel.html'); ?>
-            </div>
-        </div>
+<!--                            </ul>-->
+    </div>
+
+
 </section>
-<section class="py-5 bg-light">
+
+
+<!--section class="py-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4">
@@ -150,6 +95,6 @@
             </div>
         </div>
     </div>
-</section>
+</section-->
 
 <?php include('include/footer.html'); ?>

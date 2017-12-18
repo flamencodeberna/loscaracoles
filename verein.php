@@ -63,7 +63,7 @@
                         <br>Diverse</p>
                 </div>
                 <div class="col-md-4 p-4">
-                    <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/">
+                    <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/oliver.jpg">
                     <p><b>Oliver Jaun</b>
                         <br>Diverse</p>
                 </div>
