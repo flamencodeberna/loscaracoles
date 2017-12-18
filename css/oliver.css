@@ -8080,3 +8080,8 @@ body > * {
     pointer-events: none;
     background: linear-gradient(to top, #343a40 0%, transparent 100%);
 }
+
+.carousel-caption {
+    margin-top: 60px;
+    padding-top: 120px;
+}

@@ -2,7 +2,7 @@
 
 <?php include('include/navigation.html'); ?>
 
-<?php include('include/title-carousel.html'); ?>
+<?php include('include/title-carousel2.html'); ?>
 
 <section class="container mt-5 mb-5">
 
