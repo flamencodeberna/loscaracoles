@@ -77,6 +77,11 @@
                     <p><b>Zora Scheidegger</b>
                         <br>Vivencias</p>
                 </div>
+                <div class="col-md-4 p-4">
+                    <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/rahel.jpg">
+                    <p><b>Rahel Guggisberg</b>
+                        <br>Vivencias</p>
+                </div>
             </div>
         </div>
     </div>
