@@ -6,7 +6,6 @@
 
 <section class="container mt-5 mb-5">
 
-    <!--    <div class="row">-->
     <div class="col-sm-12 col-md-10">
         <h1>Herzlich willkommen!</h1>
 
@@ -17,16 +16,6 @@
             Namen geschaffen und ihre Anlässe sind zu einem unentbehrlichen Bestandteil des kulturellen Angebotes
             der Stadt und Region Bern geworden.
         </p>
-    </div>
-    <!--        <div class="col-sm-12 col-md-4">-->
-    <!--            --><?php //include('include/concert-carousel.html'); ?>
-    <!--        </div>-->
-    <!--    </div>-->
-
-    <div class="col-sm-12 col-md-10">
-
-
-        <!--                            <ul class="event-list">-->
 
         <?php
         $today = date('Y-m-d');
@@ -51,6 +40,7 @@
 
 
 <section class="py-5 bg-light">
+
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4">

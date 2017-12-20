@@ -9,100 +9,112 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <perch:if exists="titleImage">
-                <img src="<perch:content id="titleImage" type="image" label="Titel Bild" />" width="100%" />
-            <perch:else/>
+                <img src="<perch:content id=" titleImage" type="image" label="Titel Bild" />" width="100%" />
+                <perch:else/>
                 <img class="first-slide img-fluid" src="/img/homenagerafaeldehuelva.jpg" alt="First slide">
             </perch:if>
             <br>
             <div class="container">
                 <div class="carousel-caption">
-                    <h1><perch:content id="title" type="text" label="title"/></h1>
-                    <p><perch:content id="date" type="date" label="Date of event" format="d.m.Y"/></p>
+                    <h1>
+                        <perch:content id="title" type="text" label="title"/>
+                    </h1>
+                    <p>
+                        <perch:content id="date" type="date" label="Date of event" format="d.m.Y"/>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="py-5">
+<section class="container mt-5 mb-5">
 
-    <div class="container">
-        <div class="card">
+    <div class="col-sm-12 col-md-10">
+
+        <!--<div class="container float-left col-sm-12 col-md-8">-->
+        <div class="container float-sm-none float-md-left col-sm-12 col-md-8 border-0">
             <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-4">
+                <div class="row border">
+                    <div class="col">
                         Veranstaltungsart
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col">
                         <perch:categories id="type" label="Veranstaltungsart" set="Veranstaltungen" required="true">
                             <perch:category id="catTitle"/>
                         </perch:categories>
                     </div>
                 </div>
-                <hr>
-                <div class="row">
-                    <div class="col-sm-4">
+
+                <div class="row border">
+                    <div class="col">
                         Datum
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col">
                         <perch:content id="date" type="date" label="Date of event" format="d.m.Y"/>
                     </div>
                 </div>
-                <hr>
-                <div class="row">
-                    <div class="col-sm-4">
+
+                <div class="row border">
+                    <div class="col">
                         Zeit
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col">
                         <perch:if id="doorOpeningTime" match="eq" value="{time}">
                             <perch:content id="time" type="time" label="time" time="true" format="H:i"/>
                             <perch:else/>
-                            Türöffnung <perch:content id="doorOpeningTime" type="time" label="doorOpeningTime" format="H:i"/>
-                            / Beginn: <perch:content id="time" type="time" label="time" time="true" format="H:i"/>
+                            Türöffnung
+                            <perch:content id="doorOpeningTime" type="time" label="doorOpeningTime" format="H:i"/>
+                            / Beginn:
+                            <perch:content id="time" type="time" label="time" time="true" format="H:i"/>
                         </perch:if>
                     </div>
                 </div>
-                <hr>
-                <div class="row">
-                    <div class="col-sm-4">
+
+                <div class="row border">
+                    <div class="col">
                         Preis
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col">
                         <perch:if id="price" match="eq" value="{priceReduced}">
                             <perch:content id="price" type="text" label="price"/>
                             <perch:else/>
-                                <perch:if exists="priceReduced">
-                                    Normal: <perch:content id="price" type="int" label="price"/> / Reduziert: <perch:content id="priceReduced" type="text" label="priceReduced"/>
-                                    <perch:else/>
-                                        <perch:content id="price" type="int" label="price"/>
+                            <perch:if exists="priceReduced">
+                                Normal:
+                                <perch:content id="price" type="int" label="price"/>
+                                / Reduziert:
+                                <perch:content id="priceReduced" type="text" label="priceReduced"/>
+                                <perch:else/>
+                                <perch:content id="price" type="int" label="price"/>
                             </perch:if>
                         </perch:if>
                     </div>
                 </div>
-                <hr>
-                <div class="row">
-                    <div class="col-sm-4">
+
+                <div class="row border">
+                    <div class="col">
                         Ort
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col">
                         <perch:content id="location" type="text" label="location"/>
                     </div>
                 </div>
-                <hr>
-                <div class="row">
-                    <div class="col-sm-4">
+
+                <div class="row border">
+                    <div class="col">
                         Künstler
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col">
                         <perch:content id="artists" type="text" label="artists"/>
                     </div>
                 </div>
             </div>
         </div>
-
-        <p>
-            <perch:content id="description" type="textarea" markdown="true" editor="markitup" label="description"/>
-        </p>
+        <!--</div>-->
+        <div class="container-fluid">
+            <p>
+                <perch:content id="description" type="textarea" markdown="true" editor="markitup" label="description"/>
+            </p>
+        </div>
     </div>
-
-</div>
+</section>

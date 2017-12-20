@@ -8081,7 +8081,12 @@ body > * {
     background: linear-gradient(to top, #343a40 0%, transparent 100%);
 }
 
-.carousel-caption {
-    margin-top: 60px;
-    padding-top: 120px;
+.row-bordered:after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid #000000;
+    margin: 0 15px;
 }
+
+.myborder {
+    border-bottom: 1px solid #000000 !important; }
