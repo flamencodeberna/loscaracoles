@@ -10,9 +10,9 @@
         <h1>Herzlich willkommen!</h1>
 
         <p>
-            Seit 1990 führt der Verein Los Caracoles in Bern Flamenco-Konzerte mit verschiedenen Künstlern und Gruppen
-            aus
-            Spanien, aus der Schweiz und anderen Ländern durch. In all den Jahren hat sich die Peña einen guten
+            Seit 1990 führt der Verein Los Caracoles in Bern Flamenco-Konzerte und andere Anlässe mit verschiedenen
+            Künstlern und Gruppen aus Spanien, aus der Schweiz und anderen Ländern durch. In all den Jahren hat sich die
+            Peña einen guten
             Namen geschaffen und ihre Anlässe sind zu einem unentbehrlichen Bestandteil des kulturellen Angebotes
             der Stadt und Region Bern geworden.
         </p>
