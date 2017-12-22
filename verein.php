@@ -25,8 +25,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Die Vorstandsmitglieder</h2>
-                    <p class="lead">We grow together with the community</p>
+                    <h2>Der Vorstand</h2>
+                   
                 </div>
             </div>
             <div class="row">
