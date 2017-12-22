@@ -1,3 +1,25 @@
+<?php
+
+function navitem($requestUri, $text)
+{
+    $current_file_basename = basename($_SERVER['REQUEST_URI'], ".php");
+    $request_uri_basename = basename($requestUri, ".php");
+//    echo "$current_file_basename: " . $current_file_basename;
+//    echo "$request_uri_basename uri: " . $request_uri_basename;
+
+    if ($current_file_basename == $request_uri_basename) {
+        echo "<li class='nav-item active'>";
+    } else {
+        echo "<li class='nav-item'>";
+    }
+
+    echo "<a class='nav-link' href='" . $requestUri . "'>$text</a>";
+    echo "</li>";
+
+}
+
+?>
+
 <div class="container-fluid mifondo">
     <nav class="navbar navbar-expand-md navbar-dark mifondo navbar-inverse bg-inverse  container">
         <img class="mr-2" src="../img/logo-caracoles-transparente.png" width="45" height="35">
@@ -8,20 +30,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto text-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="../veranstaltungen">Veranstaltungen</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../verein.php">Verein</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../mitgliedschaft.php">Mitgliedschaft</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../kontakt.php">Kontakt</a>
-                </li>
-
+                <?php navitem('../veranstaltungen', "Veranstaltungen"); ?>
+                <?php navitem('../verein.php', "Verein"); ?>
+                <?php navitem('../mitgliedschaft.php', "Mitgliedschaft"); ?>
+                <?php navitem('../kontakt.php', "Kontakt"); ?>
             </ul>
             <div class="d-flex flex-row justify-content-around ml-2">
                 <a href="https://www.facebook.com/search/top/?q=pe%C3%B1a%20flamenca%20los%20caracoles"

@@ -1,6 +1,6 @@
 <?php include('../include/header.html'); ?>
 
-<?php include('../include/navigation.html'); ?>
+<?php include('../include/navigation.php'); ?>
 
 <div class="py-5">
 
@@ -12,28 +12,25 @@
             sich Flamenco-Interessierte treffen. Daneben finden sich auf dieser Liste auch Fremdveranstaltungen.
         </p>
 
-<!--        <div class="row">-->
-            <div >
-                <ul class="event-list">
+        <!--        <div class="row">-->
+        <div>
+            <?php
+            $today = date('Y-m-d');
 
-                    <?php
-                    $today = date('Y-m-d');
-
-                    perch_content_custom('veranstaltung', [
-                        'page' => '/veranstaltungen/*.php',
-                        'template' => '_veranstaltungen_overview2.html',
-                        'sort' => 'date',
-                        'sort-order' => 'DESC',
-                        'filter' => 'date',
-                        'match' => 'gte',
-                        'value' => "$today"
-                        #'count' => 2
-                    ]); ?>
+            perch_content_custom('veranstaltung', [
+                'page' => '/veranstaltungen/*.php',
+                'template' => '_veranstaltungen_overview2.html',
+                'sort' => 'date',
+                'sort-order' => 'DESC',
+                'filter' => 'date',
+                'match' => 'gte',
+                'value' => "$today"
+                #'count' => 2
+            ]); ?>
 
 
-                </ul>
-            </div>
-<!--        </div>-->
+        </div>
+        <!--        </div>-->
 
         <!--?php perch_pages_navigation([
                 'from-path' => '/veranstaltungen',

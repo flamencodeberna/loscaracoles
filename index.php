@@ -1,6 +1,6 @@
 <?php include('include/header.html'); ?>
 
-<?php include('include/navigation.html'); ?>
+<?php include('include/navigation.php'); ?>
 
 <?php include('include/title-carousel2.html'); ?>
 
