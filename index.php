@@ -24,7 +24,7 @@
             'page' => '/veranstaltungen/*.php',
             'template' => '_veranstaltungen_overview2.html',
             'sort' => 'date',
-            'sort-order' => 'DESC',
+            'sort-order' => 'ASC',
             'filter' => 'date',
             'match' => 'gte',
             'value' => "$today",
