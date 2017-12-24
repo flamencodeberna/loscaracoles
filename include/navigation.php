@@ -4,8 +4,6 @@ function navitem($requestUri, $text)
 {
     $current_file_basename = basename($_SERVER['REQUEST_URI'], ".php");
     $request_uri_basename = basename($requestUri, ".php");
-//    echo "$current_file_basename: " . $current_file_basename;
-//    echo "$request_uri_basename uri: " . $request_uri_basename;
 
     if ($current_file_basename == $request_uri_basename) {
         echo "<li class='nav-item active'>";

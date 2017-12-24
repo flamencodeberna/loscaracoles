@@ -1,18 +1,27 @@
 <!--https://bootsnipp.com/snippets/BEeZ4-->
 
-<div class="text-white gradient-overlay bg-secondary py-2">
-    <div class="container">
+<div class="text-white py-2">
+    <div class="container event-overview border">
         <div class="row">
 
-            <div class="text-md-left text-center align-self-center my-2 col-md-6 col-12 col-sm-12">
-                <!--                            <div class="text-md-left text-center align-self-center my-2 col-md-7 col-12 col-sm-12">-->
+            <div class="col-sm-2 col-md-2 col-lg-2 text-center align-self-center align-self-baseline align">
+                <time datetime="<perch:content id="date" type="date" label="Date of event" format="Y-m-d"/>" class="icon">
+                    <em><perch:content id="date" type="date" label="Date of event" format="l"/></em>
+                    <strong><perch:content id="date" type="date" label="Date of event" format="F"/></strong>
+                    <span><perch:content id="date" type="date" label="Date of event" format="d"/></span>
+                </time>
+                <!--<perch:content id="date" type="date" label="Date of event" format="d.m.Y"/><br>-->
+                <!--<perch:content id="time" type="text" label="time" format="H:i"/>-->
+            </div>
+            <div class="text-md-left text-center align-self-center my-2 col-sm-12 col-md-8">
+                <!--                            <div class="text-md-left text-center align-self-center comy-2 l-md-7 col-12 col-sm-12">-->
                 <perch:categories id="type" label="Veranstaltungsart" set="Veranstaltungen" required="true">
                     <perch:category id="catTitle"/>
                 </perch:categories>
                 <h2><a href="<perch:content id="_page" type="hidden" />"><perch:content id="title" type="text" label="title"/></a></h2>
 
                 <p><perch:content id="date" type="date" label="Date of event" format="d.m.Y"/><br>
-                    <perch:content id="time" type="text" label="time" format="H:m"/>,
+                    <perch:content id="time" type="text" label="time" format="H:i"/>,
                     <perch:content id="location" type="text" label="location"/><br>
                 </p>
                 <p>
@@ -24,13 +33,7 @@
                 <a class="btn btn-lg btn-primary mx-1" href="<perch:content id="_page" type="hidden" />">Mehr Infos</a>
                 <a class="btn btn-lg btn-primary mx-1" href="reservation.html">Reservieren</a>
             </div>
-            <div class="col-md-6 text-center align-self-center">
-                <perch:if exists="smallTitleImage">
-                    <img src="<perch:content id="smallTitleImage" type="image" label="Kleines Titel-Bild für die Übersicht" suppress="false"/>"/>
-                    <perch:else/>
-                    <img src="/img/logo69.png"/>
-                </perch:if>
-            </div>
+
         </div>
     </div>
 </div>
