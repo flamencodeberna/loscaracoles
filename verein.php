@@ -33,7 +33,7 @@
                 <div class="col-md-4 p-4">
                     <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/alfredo.jpg">
                     <p><b>Alfredo Palacios</b>
-                        <br>Internetauftritt, Werbung</p>
+                        <br>Co-Präsidium, Internetauftritt, Werbung</p>
                 </div>
                 <div class="col-md-4 p-4">
                     <img class="img-fluid d-block rounded-circle mx-auto"
@@ -44,7 +44,7 @@
                 <div class="col-md-4 p-4">
                     <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/daniel.jpg">
                     <p><b>Daniel Zihler</b>
-                        <br>President</p>
+                        <br>Co-Präsidium, Fusionsprojekte</p>
                 </div>
                 <div class="col-md-4 p-4">
                     <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/res.jpg">
@@ -65,12 +65,12 @@
                 <div class="col-md-4 p-4">
                     <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/oliver.jpg">
                     <p><b>Oliver Jaun</b>
-                        <br>Diverse</p>
+                        <br>Diverse. Internetauftritt</p>
                 </div>
                 <div class="col-md-4 p-4">
                     <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/tombickel.jpg">
-                    <p><b>Thom Bickel</b>
-                        <br>Fusionsprojekte<br> Los Caracoles – Flamencovivo</p>
+                    <p><b>Tom Bickel</b>
+                        <br>Fusionsprojekte<br> Los Caracoles – flamencovivo</p>
                 </div>
                 <div class="col-md-4 p-4">
                     <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/zora.jpg">
