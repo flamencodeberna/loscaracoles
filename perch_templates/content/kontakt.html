@@ -1,0 +1,52 @@
+<div class="py-5" style="height:100%">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1" data-form-type="formoid">
+
+            <h1>
+                Los Caracoles Kontakt Formular
+            </h1>
+            <p>
+            Bitte wenden Sie sich bei Kontaktaufnahme, für Mitteilungen, Empfehlungen und Vorschlägen an Los Caracoles wenn immer möglich per E-Mail. Danke.
+            </p>
+            <p<>
+            Allgemeines, Administration: <a href="mailto:info@loscaracoles.ch">info@loscaracoles.ch</a><br>
+            Mitglieder, Kasse, Buchhaltung: Andreas Stettler <a href="mailto:mitgliederverwaltung@loscaracoles.ch">mitgliederverwaltung@loscaracoles.ch</a><br>
+            Konzertorganisation: Daniel Zihler, Alfredo Palacios <a href="mailto:konzerte@loscaracoles.ch">konzerte@loscaracoles.ch</a><br>
+            </p>
+               
+
+
+                <perch:form id="kontakt" method="post" data-form-title="CONTACT FORM">
+                    <div class="row row-sm-offset">
+                        <div class="col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <perch:label class="form-control-label" for="form1-2h-name">Name<span class="form-asterisk">*</span></perrch:label>
+                                <perch:input id="name" type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-2h-name"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <perch:label class="form-control-label" for="form1-2h-email">Email<span class="form-asterisk">*</span></perch:label>
+                                <perch:input id="email" type="email" class="form-control" name="email" required="" data-form-field="Email" id="form1-2h-email"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <perch:label class="form-control-label" for="form1-2h-phone">Phone</perch:label>
+                                <perch:input id="phone" type="tel" class="form-control" name="phone" data-form-field="Phone" id="form1-2h-phone"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <perch:label class="form-control-label" for="form1-2h-message">Message</perch:label>
+                        <textarea class="form-control" name="message" rows="7" data-form-field="Message" id="form1-2h-message"></textarea>
+                    </div>
+                    <div>
+	                  <perch:input type="submit" id="submit"  class="btn btn-primary" value="Senden"/>  
+	                </div>
+                </perch:form>
+            </div>
+        </div>
+    </div>
+</div>
