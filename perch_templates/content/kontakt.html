@@ -1,9 +1,7 @@
-<div class="py-5" style="height:100%">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-lg-10 col-lg-offset-1" data-form-type="formoid">
-
-            <h1>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 mx-auto py-5">
+			<h1>
                 Los Caracoles Kontakt Formular
             </h1>
             <p>
@@ -14,39 +12,47 @@
             Mitglieder, Kasse, Buchhaltung: Andreas Stettler <a href="mailto:mitgliederverwaltung@loscaracoles.ch">mitgliederverwaltung@loscaracoles.ch</a><br>
             Konzertorganisation: Daniel Zihler, Alfredo Palacios <a href="mailto:konzerte@loscaracoles.ch">konzerte@loscaracoles.ch</a><br>
             </p>
-               
-
-
-                <perch:form id="kontakt" method="post" data-form-title="CONTACT FORM">
-                    <div class="row row-sm-offset">
-                        <div class="col-xs-12 col-md-4">
-                            <div class="form-group">
-                                <perch:label class="form-control-label" for="form1-2h-name">Name<span class="form-asterisk">*</span></perrch:label>
-                                <perch:input id="name" type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-2h-name"/>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="form-group">
-                                <perch:label class="form-control-label" for="form1-2h-email">Email<span class="form-asterisk">*</span></perch:label>
-                                <perch:input id="email" type="email" class="form-control" name="email" required="" data-form-field="Email" id="form1-2h-email"/>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="form-group">
-                                <perch:label class="form-control-label" for="form1-2h-phone">Phone</perch:label>
-                                <perch:input id="phone" type="tel" class="form-control" name="phone" data-form-field="Phone" id="form1-2h-phone"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <perch:label class="form-control-label" for="form1-2h-message">Message</perch:label>
-                        <textarea class="form-control" name="message" rows="7" data-form-field="Message" id="form1-2h-message"></textarea>
-                    </div>
-                    <div>
-	                  <perch:input type="submit" id="submit"  class="btn btn-primary" value="Senden"/>  
-	                </div>
-                </perch:form>
-            </div>
-        </div>
-    </div>
-</div>
+            <p>
+	        <b>Briefadresse</b><br>
+			Los Caracoles<br>
+			c/o Flamenco Gitarre<br>
+			Bubenbergplatz 8<br>
+			CH-3011 Bern<br><br>
+			<b>Telefon</b><br>
+			+ 41(79)249 09 31
+            </p>
+		        <perch:form id="contact" method="post" app="perch_forms">
+		            <div class="form-group">
+		                <perch:label for="name">Name / Vorname</perch:label>
+		                <perch:input class="form-control" type="text" id="name" required="true" label="Name" />
+		                <perch:error for="name" type="required">Bitte fügen Sie Ihren Namen und Vorname</perch:error>
+		            </div>
+		            <div class="form-group">
+		                <perch:label for="email">Email</perch:label>
+		                <perch:input class="form-control" type="email" id="email" required="true" label="Email" />
+		                <perch:error for="email" type="required">Bitte fügen Sie Ihre E-Mail-Adresse</perch:error>
+		                <perch:error for="email" type="format">Bitte überprüfen Sie Ihre E-Mail-Adresse</perch:error>
+		            </div>
+		    <div class="form-group">
+		        <perch:label for="telefon">Telefon</perch:label>
+		        <perch:input class="form-control" type="telefon" id="telefon" required="true" label="Telefon" />
+		        <perch:error for="telefon" type="required">Bitte fügen Sie Ihre Telefon Nummer</perch:error>
+		    </div>
+		        <div class="form-group">
+		            <perch:label for="message">Nachricht</perch:label>
+		            <perch:input class="form-control" type="textarea" id="message" required="true" label="Message" />
+		            <perch:error for="message" type="required">Bitte fügen Sie eine Nachricht</perch:error>
+		        </div>
+		            <perch:input class="btn btn-primary" type="submit" id="submit" value="Senden" />
+		        </div>
+		        <perch:success>
+		            <perch:content id="success" type="textarea" label="Thank you message" textile="true" editor="markitup" />
+		        </perch:success>
+		        </perch:form>								
+		</div>	
+	</div>
+</div>           
+                
+                
+                
+             
