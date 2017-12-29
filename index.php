@@ -62,8 +62,8 @@
                     <img class="card-img-top" src="img-caracoles/pepehabichuela.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h4 class="card-title">Konzerte</h4>
-                        <p class="card-text">Die von uns organisierten Konzerte sind weit über den Verein hinaus bekannt
-                            und bringen jeweils hervorragende Künstler aus der Schweiz, Spanien und anderswo nach Bern.
+                        <p class="card-text">Die von uns organisierten Publikums-Konzerte sind weit über den Verein hinaus bekannt
+                            und bringen jeweils hervorragende Künstler aus Spanien und anderen Ländern.
                             Aktuell finden diese Konzerte meist in der Vidmarhalle statt, teilweise aber auch an anderen
                             Orten. Das aktuelle Konzertprogramm finden Sie <a href="/veranstaltungen">hier</a>.</p>
                     </div>
