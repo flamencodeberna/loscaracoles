@@ -1,6 +1,5 @@
 <?php include('include/header.html'); ?>
-
-<?php include('include/navigation.php'); ?>
+ <?php include('include/navigation.php'); ?>
 
 <section class="py-5">
     <div class="container">
