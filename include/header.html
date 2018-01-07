@@ -9,6 +9,24 @@
         <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/oliver.css" rel="stylesheet">
+
+    <?php
+    $domain        = 'http://'.$_SERVER["HTTP_HOST"];
+    $url           = $domain.$_SERVER["REQUEST_URI"];
+    $sitename      = "The name of my website";
+    $twittername   = "@mytwittername";
+    $sharing_image = '/images/default_fb_image.jpg';
+
+    PerchSystem::set_var('domain',$domain);
+    PerchSystem::set_var('url',$url);
+    PerchSystem::set_var('sharing_image',$sharing_image);
+    PerchSystem::set_var('twittername',$twittername);
+
+    perch_page_attributes(array(
+      'template' => 'seo.html'
+    ));
+
+    ?>
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111778022-1"></script>
