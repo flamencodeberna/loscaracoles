@@ -31,6 +31,7 @@ function navitem($requestUri, $text)
                 <?php navitem('../veranstaltungen', "Veranstaltungen"); ?>
                 <?php navitem('../verein.php', "Verein"); ?>
                 <?php navitem('../mitgliedschaft.php', "Mitgliedschaft"); ?>
+                <?php navitem('../links.php', "Links"); ?>
                 <?php navitem('../kontakt.php', "Kontakt"); ?>
             </ul>
             <div class="d-flex flex-row justify-content-around ml-2">
