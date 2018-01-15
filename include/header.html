@@ -15,7 +15,7 @@
     $url           = $domain.$_SERVER["REQUEST_URI"];
     $sitename      = "The name of my website";
     $twittername   = "@mytwittername";
-    $sharing_image = '/images/default_fb_image.jpg';
+    $sharing_image = '/perch/resources/homenagerafaeldehuelva-w1200.jpg';
 
     PerchSystem::set_var('domain',$domain);
     PerchSystem::set_var('url',$url);
@@ -23,7 +23,7 @@
     PerchSystem::set_var('twittername',$twittername);
 
     perch_page_attributes(array(
-      'template' => 'seo.html'
+      'template' => 'default.html'
     ));
 
     ?>
