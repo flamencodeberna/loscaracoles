@@ -71,8 +71,8 @@
                 <tr>
                     <td align="center">&nbsp;</td>
                     <td><span class="fliesstext11print"><a
-                                    href="http://www.alfredopalacios.ch/flamenco-gitarrenunterricht-online.htm"
-                                    target="_blank">www.alfredopalacios.ch</a></span></td>
+                                    href="https://www.flamencogitarre-unterricht.ch"
+                                    target="_blank">www.flamencogitarre-unterricht.ch</a></span></td>
                     <td>Alfredo Palacios, Bern</td>
                 </tr>
                 <tr>
