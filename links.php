@@ -202,7 +202,13 @@
                     <td colspan="3" style="background-color:#CCC;padding:3px;"><a
                                 href="http://www.flamenco-leonormoro.ch"></a>Kommerzielle Links
                     </td>
+                </tr>                           
+                <tr>
+                    <td align="center" class="fliesstext10">&nbsp;</td>
+                    <td><a href="http://www.bailaflamenco.ch" target="_blank">www.bailaflamenco.ch</a></td>
+                    <td>¡baila! moda flamenca</td>
                 </tr>
+                <tr>
                 <tr>
                     <td align="center" class="fliesstext10">&nbsp;</td>
                     <td><a href="http://www.websaiten.ch" target="_blank">www.websaiten.ch</a></td>
