@@ -29,7 +29,7 @@
             'filter' => 'date',
             'match' => 'gte',
             'value' => "$today",
-            'count' => 1
+            'count' => 2
         ]); ?>
 
 
