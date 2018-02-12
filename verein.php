@@ -35,12 +35,6 @@
                         <br>Co-Präsidium, Internetauftritt, Werbung</p>
                 </div>
                 <div class="col-md-4 p-4">
-                    <img class="img-fluid d-block rounded-circle mx-auto"
-                         src="/img-caracoles/vorstand/antonioFlores.jpg">
-                    <p><b>Antonio Flores</b>
-                        <br>Diverses</p>
-                </div>
-                <div class="col-md-4 p-4">
                     <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/daniel.jpg">
                     <p><b>Daniel Zihler</b>
                         <br>Co-Präsidium, Fusionsprojekte</p>
@@ -49,12 +43,6 @@
                     <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/res.jpg">
                     <p><b>Adreas Stettler</b>
                         <br>Mitgliederverwaltung</p>
-                </div>
-                <div class="col-md-4 p-4">
-                    <img class="img-fluid d-block rounded-circle mx-auto"
-                         src="/img-caracoles/vorstand/rocioDeFlores.jpg">
-                    <p><b>Rocio Flores</b>
-                        <br>Diverses</p>
                 </div>
                 <div class="col-md-4 p-4">
                     <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/theres.jpg">
@@ -81,6 +69,12 @@
                     <p><b>Rahel Guggisberg</b>
                         <br>Vivencias</p>
                 </div>
+                <div class="col-md-4 p-4">
+                    <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/nicol.jpg">
+                    <p><b>Nicole Wyss</b>
+                        <br>Diverse</p>
+                </div>
+
             </div>
         </div>
     </div>
