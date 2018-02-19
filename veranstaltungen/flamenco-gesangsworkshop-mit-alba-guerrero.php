@@ -1,1 +1,0 @@
-<?php include(str_replace('/', DIRECTORY_SEPARATOR, '../perch/../perch_templates/pages/veranstaltung.php')); ?>
