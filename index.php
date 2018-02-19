@@ -35,7 +35,7 @@
                 [
                     'filter' => 'eventType',
                     'match' => 'contains',
-                    'value' => 'Los Caracoles'
+                    'value' => 'Los Caracoles Konzert'
                 ]
             ],
             'count' => 2
