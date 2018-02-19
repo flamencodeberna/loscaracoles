@@ -10,6 +10,7 @@
         <h1>Herzlich willkommen!</h1>
 
         <p>
+
             Seit 1990 führt der Verein Los Caracoles in Bern Flamenco-Konzerte und andere Anlässe mit verschiedenen
             Künstlern und Gruppen aus Spanien, aus der Schweiz und anderen Ländern durch. In all den Jahren hat sich die
             Peña einen guten
@@ -19,6 +20,9 @@
 
     </div>
     <div class="col-sm-12 col-md-10">
+
+        <?php perch_content('index'); ?>
+
         <?php
         $today = date('Y-m-d');
 
