@@ -18,6 +18,8 @@
             der Stadt und Region Bern geworden.
         </p>
 
+    </div>
+    <div class="col-sm-12 col-md-10">
         <?php
         $today = date('Y-m-d');
 
