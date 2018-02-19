@@ -26,11 +26,22 @@
             'template' => '_veranstaltungen_overview2.html',
             'sort' => 'date',
             'sort-order' => 'ASC',
-            'filter' => 'date',
-            'match' => 'gte',
-            'value' => "$today",
+            'filter'=> [
+                [
+                    'filter' => 'date',
+                    'match' => 'gte',
+                    'value' => "$today"
+                ],
+                [
+                    'filter' => 'eventType',
+                    'match' => 'contains',
+                    'value' => 'Los Caracoles'
+                ]
+            ],
             'count' => 2
         ]); ?>
+
+
 
 
         <!--                            </ul>-->
