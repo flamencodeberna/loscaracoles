@@ -1,0 +1,10 @@
+RewriteEngine on
+
+RewriteRule ^downloadDocs/StatutenVereinLosCaracoles.pdf$ http://www.loscaracoles.ch/statutenvereinloscaracoles.pdf [R=301,L]
+
+
+
+
+#convierte loscaracoles.ch en www.loscaracoles.ch
+RewriteCond %{HTTP_HOST} ^loscaracoles.ch [NC]
+RewriteRule ^(.*)$ http://www.loscaracoles.ch/$1 [L,R=301,NC]

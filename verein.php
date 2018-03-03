@@ -46,7 +46,7 @@
                 </div>
                 <div class="col-md-4 p-4">
                     <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/theres.jpg">
-                    <p><b>Theres Palacios</b>
+                    <p><b>Teresa Palacios</b>
                         <br>Diverse</p>
                 </div>
                 <div class="col-md-4 p-4">
