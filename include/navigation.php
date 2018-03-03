@@ -29,6 +29,7 @@ function navitem($requestUri, $text)
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto text-center">
                 <?php navitem('../veranstaltungen', "Veranstaltungen"); ?>
+                <?php navitem('../veranstaltungen/weitere.php', "Weitere Events"); ?>
                 <?php navitem('../verein.php', "Verein"); ?>
                 <?php navitem('../mitgliedschaft.php', "Mitgliedschaft"); ?>
                 <?php navitem('../links.php', "Links"); ?>
