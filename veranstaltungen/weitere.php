@@ -24,16 +24,16 @@
                 //'category' => 'veranstaltungen/'.perch_get('los-caracoles-konzert'),
                 //'type' => "veranstaltungen/los-caracoles-konzert/",
                 'filter'=> [
-                  [
-                    'filter' => 'eventType',
-                    'match' => 'regex',
-                    'value' => '^Los Caracoles' #[^ ][^C][^a][^r][^a]{^c][^o][^l][^e][^s)'
-                ],
-                  [
-                    'filter' => 'date',
-                    'match' => 'gte',
-                    'value' => "$today"
-                 ]
+                    [
+                        'filter' => 'date',
+                        'match' => 'gte',
+                        'value' => "$today"
+                    ],
+                    [
+                        'filter' => 'eventType',
+                        'match' => 'regex',
+                        'value' => '^[^Los Caracoles].+'
+                    ]
                 ]
                 #'count' => 2
             ]); ?>
