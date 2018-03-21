@@ -1,20 +1,20 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: #2b2222">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!--<ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol> -->
     <div class="carousel-inner">
-        <div class="carousel-item active text-center">
+        <div class="carousel-item active">
             <perch:if exists="titleImage">
-                <img class="img-fluid" src="<perch:content id="titleImage" type="image" label="Titel Bild" />"   /> 
+                <img src="<perch:content id="titleImage" type="image" label="Titel Bild" />" width="100%" />
                 <perch:else/>
                 <img class="first-slide img-fluid" src="/img/homenagerafaeldehuelva.jpg" alt="First slide">
             </perch:if>
             <br>
             <div class="container">
                 <div class="carousel-caption">
-                    <!--<h1>
+                    <h1>
                         <perch:content id="title" type="text" label="title"/>
                     </h1>
                     <p>
@@ -24,49 +24,63 @@
                         <perch:if id="eventType" match="contains" value="Los Caracoles Konzert">
                             <a class="btn btn-lg btn-primary mx-1" href="/reservationen.php">Reservieren</a>
                         </perch:if>
-                    </p>-->
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<section>
-	<div class="container py-5">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h1>
-                <perch:content id="title" type="text" label="title"/>
-                <p>
-                <perch:content id="date" type="date" label="Date of event" format="d.m.Y"/>
-                </p>
-                </h1>
-			</div>
-			<div class="col-lg-3 col-md-4 veranstaltungen">
-				<p>Veranstaltungsart:<br>
-				<perch:content id="eventType" type="select" label="Type of the event" options="Los Caracoles Konzert, Los Caracoles Mitgliederversammlung, Los Caracoles Vivencias, Los Caracoles Workshop, Konzert, Workshop" allowempty="false" required="true" /></p>
-			</div>
-			<div class="col-lg-3 col-md-4 veranstaltungen">
-				<p>Datum:<br>
-				<perch:content id="date" type="date" label="Date of event" format="d.m.Y"/></p>
-			</div>
-			<div class="col-lg-3 col-md-4 veranstaltungen">
-				<p>Zeit:<br>
-				<perch:if id="doorOpeningTime" match="eq" value="{time}">
+
+<section class="container mt-5 mb-5">
+
+    <div class="col-sm-12 col-md-10">
+
+        <!--<div class="container float-left col-sm-12 col-md-8">-->
+        <div class="container float-sm-none float-md-left col-sm-12 col-md-8 border-0">
+            <div class="card-body">
+                <div class="row border">
+                    <div class="col">
+                        Veranstaltungsart
+                    </div>
+                    <div class="col">
+
+                        <perch:content id="eventType" type="select" label="Type of the event"
+                                       options="Los Caracoles Konzert, Los Caracoles Mitgliederversammlung, Los Caracoles Vivencias, Los Caracoles Workshop, Konzert, Workshop" allowempty="false" required="true" />
+
+                    </div>
+                </div>
+
+                <div class="row border">
+                    <div class="col">
+                        Datum
+                    </div>
+                    <div class="col">
+                        <perch:content id="date" type="date" label="Date of event" format="d.m.Y"/>
+                    </div>
+                </div>
+
+                <div class="row border">
+                    <div class="col">
+                        Zeit
+                    </div>
+                    <div class="col">
+                        <perch:if id="doorOpeningTime" match="eq" value="{time}">
                             <perch:content id="time" type="time" label="time" time="true" format="H:i"/>
                             <perch:else/>
                             Türöffnung
                             <perch:content id="doorOpeningTime" type="time" label="doorOpeningTime" format="H:i"/>
                             / Beginn:
                             <perch:content id="time" type="time" label="time" time="true" format="H:i"/>
-                        </perch:if></p>
-			</div>
-			<div class="col-lg-3 col-md-4 veranstaltungen">
-				<p>Ort:<br>
-				<perch:content id="location" type="text" label="location"/></p>
-			</div>
-			<div class="col-lg-3 col-md-4 veranstaltungen">
-				<p>Preis:<br>
-				<perch:if id="price" match="eq" value="{priceReduced}">
+                        </perch:if>
+                    </div>
+                </div>
+
+                <div class="row border">
+                    <div class="col">
+                        Preis
+                    </div>
+                    <div class="col">
+                        <perch:if id="price" match="eq" value="{priceReduced}">
                             <perch:content id="price" type="text" label="price"/>
                             <perch:else/>
                             <perch:if exists="priceReduced">
@@ -77,15 +91,37 @@
                                 <perch:else/>
                                 <perch:content id="price" type="int" label="price"/>
                             </perch:if>
-                        </perch:if></p>
-                        
-			</div>
-			<div class="col-lg-9 col-md-4 veranstaltungen">
-				<p>Küntler:<br>
-				<perch:content id="artists" type="text" label="artists"/>
-				</p>
-                        
-			</div>
-		</div>	
-	</div>
+                        </perch:if>
+                    </div>
+                </div>
+
+                <div class="row border">
+                    <div class="col">
+                        Ort
+                    </div>
+                    <div class="col">
+                        <perch:content id="location" type="text" label="location"/>
+                    </div>
+                </div>
+
+                <div class="row border">
+                    <div class="col">
+                        Künstler
+                    </div>
+                    <div class="col">
+                        <perch:content id="artists" type="text" label="artists"/>
+                    </div>
+                </div>
+            </div>
+            <perch:if id="eventType" match="contains" value="Los Caracoles Konzert">
+                <a class="btn btn-lg btn-primary mx-1" href="/reservationen.php">Reservieren</a>
+            </perch:if>
+        </div>
+        <!--</div>-->
+        <div class="container-fluid">
+            <p>
+                <perch:content id="description" type="textarea" markdown="true" editor="markitup" label="description"/>
+            </p>
+        </div>
+    </div>
 </section>
