@@ -21,7 +21,7 @@
                         <perch:content id="date" type="date" label="Date of event" format="d.m.Y"/>
                     </p>
                     <p>
-                        <perch:if id="eventType" match="contains" value="Los Caracoles Konzert">
+                        <perch:if id="withReservation" match="eq" value="1">
                             <a class="btn btn-lg btn-primary mx-1" href="/reservationen.php">Reservieren</a>
                         </perch:if>
                     </p>
@@ -113,7 +113,10 @@
                     </div>
                 </div>
             </div>
-            <perch:if id="eventType" match="contains" value="Los Caracoles Konzert">
+
+            <perch:content id="withReservation" type="checkbox" label="With Reservation" value="false" suppress="true"/>
+
+            <perch:if id="withReservation" match="eq" value="1">
                 <a class="btn btn-lg btn-primary mx-1" href="/reservationen.php">Reservieren</a>
             </perch:if>
         </div>
