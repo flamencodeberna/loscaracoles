@@ -1,47 +1,75 @@
- <perch:form id="reservationen" method="post" app="perch_forms">
-              <fieldset>
-                <!-- Form Name -->
-                <!-- Text input-->
-                <h3>Reservationen</h3>
-                <div class="form-group">
-                  <perch:label class=" control-label" for="name">Name</perch:label>
-                  <div class="">
-                     <perch:input id="Name" name="Name" type="text" placeholder="" class="form-control input-md" required="true"data-validation-required-message=""/> </div>
-                </div>
-                <div class="form-group">
-                  <perch:label class="control-label" for="vorname">Vorname</perch:label>
-                  <div class="">
-                     <perch:input id="Vorname" name="Vorname" type="text" placeholder="" class="form-control input-md" required="true" data-validation-required-message=""/> </div>
-                </div>
-                <div class="form-group">
-                  <perch:label class=" control-label" for="email">E-Mail</perch:label>
-                   <perch:input id="email" name="E-Mail" type="email" placeholder="" class="form-control input-md" required="true" data-validation-required-message="No te olvides de poner tu mail"/> 
-                </div>
-                  <div class="form-group">
-                      <perch:label class=" control-label" for="email">Veranstaltung</perch:label>
-                      <perch:input type="select"
-                                   options="Manuel Montero (14.09.2018), José Galvàn & José Antonio Galvàn (13.10.2018), Konzert 'Noche Flamenca' mit David Moran (27.10.2018)"
-                                   class="form-control" id="Veranstaltung" />
-                  </div>
-                <div class="form-group">
-			        <perch:label for="exampleFormControlSelect1">Anzahl Tickets</perch:label>
-			        <perch:input type="select" options="1 Ticket,2 Tickets,3 Tickets,4 Tickets,5 Tickets,6 Tickets,7 Tickets,8 Tickets,9 Tickets,10 Tickets"
-			            class="form-control" id="Tickets" />
-			    </div>
-                <!-- Button -->
-                <div class="form-group">
-                  <div class="col-md-4">
-                    <perch:input type="submit" id="submit"  class="btn btn-primary" value="Senden"/>
-                  </div>              
-                <perch:success>				
-				<div class="row">				
-					<div class="alert success text-success">
-                <perch:content id="success" type="textarea" size="m" label="Mensaje de Gracias" markdown="true" editor="simplemde" required="true"/>
+<perch:form id="reservationen" method="post" app="perch_forms">
+    <fieldset>
+
+        <div class="form-group">
+            <perch:label class="control-label" for="email">Veranstaltung</perch:label>
+            <perch:input type="select"
+                         options="Manuel Montero (14.09.2018), José Galvàn & José Antonio Galvàn (13.10.2018), Konzert 'Noche Flamenca' mit David Moran (27.10.2018)"
+                         class="form-control"
+                         id="Veranstaltung"/>
+        </div>
+        <div class="form-group">
+            <perch:label class=" control-label" for="name">Name</perch:label>
+            <div class="">
+                <perch:input id="Name"
+                             name="Name"
+                             type="text"
+                             placeholder=""
+                             class="form-control input-md"
+                             required="true"
+                             data-validation-required-message=""/>
             </div>
         </div>
-    </perch:success>
-              </fieldset>
-           </perch:form>
+        <div class="form-group">
+            <perch:label class="control-label" for="vorname">Vorname</perch:label>
+            <div class="">
+                <perch:input id="Vorname"
+                             name="Vorname"
+                             type="text"
+                             placeholder=""
+                             class="form-control input-md"
+                             required="true"
+                             data-validation-required-message=""/>
+            </div>
+        </div>
+        <div class="form-group">
+            <perch:label class="control-label" for="email">E-Mail</perch:label>
+            <perch:input id="email"
+                         name="E-Mail"
+                         type="email"
+                         placeholder=""
+                         class="form-control input-md"
+                         required="true"
+                         data-validation-required-message="No te olvides de poner tu mail"/>
+        </div>
+
+        <div class="form-group">
+            <perch:label for="exampleFormControlSelect1">Anzahl Tickets</perch:label>
+            <perch:input type="select"
+                         options="1 Ticket,2 Tickets,3 Tickets,4 Tickets,5 Tickets,6 Tickets,7 Tickets,8 Tickets,9 Tickets,10 Tickets"
+                         class="form-control"
+                         id="Tickets"/>
+        </div>
+        <!-- Button -->
+        <div class="form-group">
+            <div class="col-md-4">
+                <perch:input type="submit" id="submit" class="btn btn-primary" value="Senden"/>
+            </div>
+            <perch:success>
+                <div class="row">
+                    <div class="alert success text-success">
+                        <perch:content id="success"
+                                       type="textarea"
+                                       size="m"
+                                       label="Mensaje de Gracias"
+                                       markdown="true"
+                                       editor="simplemde"
+                                       required="true"/>
+                    </div>
+                </div>
+            </perch:success>
+    </fieldset>
+</perch:form>
            
            
            
