@@ -60,16 +60,6 @@
                         <br>Fusionsprojekte<br> Los Caracoles – flamencovivo</p>
                 </div>
                 <div class="col-md-4 p-4">
-                    <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/zora.jpg">
-                    <p><b>Zora Scheidegger</b>
-                        <br>Vivencias</p>
-                </div>
-                <div class="col-md-4 p-4">
-                    <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/rahel.jpg">
-                    <p><b>Rahel Guggisberg</b>
-                        <br>Vivencias</p>
-                </div>
-                <div class="col-md-4 p-4">
                     <img class="img-fluid d-block rounded-circle mx-auto" src="/img-caracoles/vorstand/nicol.jpg">
                     <p><b>Nicole Wyss</b>
                         <br>Diverse</p>
